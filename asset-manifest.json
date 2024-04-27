@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vinni99/main-portfolio/static/css/main.f855e6bc.css",
+    "main.js": "/Vinni99/main-portfolio/static/js/main.abf94eae.js",
+    "static/js/453.1407b060.chunk.js": "/Vinni99/main-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/logo.svg": "/Vinni99/main-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Vinni99/main-portfolio/index.html",
+    "main.f855e6bc.css.map": "/Vinni99/main-portfolio/static/css/main.f855e6bc.css.map",
+    "main.abf94eae.js.map": "/Vinni99/main-portfolio/static/js/main.abf94eae.js.map",
+    "453.1407b060.chunk.js.map": "/Vinni99/main-portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.abf94eae.js"
+  ]
+}
