@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import MainHomePage from './components/MainCard';
+import MainHomepage from './components/MainCard';
 
 function App() {
   return (
     <div className="HomePage">
-        <MainHomePage/>
+      <MainHomepage/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import About from "../pages/About";
 import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
 
-function MainHomePage() {
+function MainHomepage() {
     const [currentPage, setCurrentPage] = useState("About");
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -23,15 +23,18 @@ function MainHomePage() {
         }
         if (currentPage === "Resume") {
             return <Resume />;
-        };
+        } 
     };
 
     return (
         <div>
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}
+            
             <Footer />
+
         </div>
     );
 }
-export default MainHomePage;
+
+export default MainHomepage;

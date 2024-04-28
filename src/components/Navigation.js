@@ -1,47 +1,33 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
+import { Nav } from "react-bootstrap";
 
-function Navigation({ currentPage, setCurrentPage }) {
-    return (
-        <Nav fill variant="tabs" defaultActiveKey="/home">
-            <Nav.Item>
-                <Nav.Link
-                    href="#about"
-                    onClick={() => setCurrentPage("About")}
-                    className={currentPage === "About" ? "nav-link active" : "nav-link"}
-                >
-                    About
-                </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link
-                    href="#portfolio"
-                    onClick={() => setCurrentPage("Portfolio")}
-                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-                >
-                    Portfolio
-                </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link
-                    href="#contact"
-                    onClick={() => setCurrentPage("Contact")}
-                    className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-                >
-                    Contact
-                </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link
-                    href="#resume"
-                    onClick={() => setCurrentPage("Resume")}
-                    className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
-                >
-                    Resume
-                </Nav.Link>
-            </Nav.Item>
-        </Nav>
-    );
+function NavTabs({ currentPage, handlePageChange }) {
+  return (
+    <>
+      <Nav className="justify-content-end" variant='pills' defaultActiveKey='#Portfolio'>
+        <Nav.Item>
+          <Nav.Link href="#portfolio"
+           onClick={() => handlePageChange("Portfolio")}
+            className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}>Portfolio</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#about-me" 
+          onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "nav-link active" : "nav-link"}>About Me</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#contact" 
+          onClick={() => handlePageChange("Contact")}
+            className={currentPage === "Contact" ? "nav-link active" : "nav-link"}>Contact</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#resume" 
+          onClick={() => handlePageChange("Resume")}
+            className={currentPage === "Resume" ? "nav-link active" : "nav-link"}>Resume</Nav.Link>
+        </Nav.Item>
+      </Nav> 
+    </>
+  );
 }
 
-export default Navigation;
+export default NavTabs;
