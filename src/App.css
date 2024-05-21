@@ -3,6 +3,11 @@ body {
  padding: 0;
 }
 
+.HomePage {
+  background-color: #4b8bf983;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
