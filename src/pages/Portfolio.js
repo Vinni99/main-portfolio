@@ -3,14 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Portfolio() {
     return (
-        <Container id="portfolio" className="my-5">
+        <Container className="my-5">
             <Row className="portfolio">
                 <Col md={6}>
                     <h1>Portfolio</h1>
                     <hr></hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis neque quis ipsum laoreet commodo.
-                        Phasellus commodo, purus quis consectetur rh);
-                    </p>
+                    <p>Check out some of my projects!</p>
                 </Col>
             </Row>
         </Container>

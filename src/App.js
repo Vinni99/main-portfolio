@@ -1,25 +1,32 @@
 import './App.css';
 import React, { useState } from 'react';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Navigation from './components/Navigation';
 
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState("About");
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+
+    const section = document.getElementById(page.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const renderPage = () => {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
     if (currentPage === "About") {
-      return <About />;
+      return <About handleButtonClick={() => handlePageChange('Portfolio')} />;
     }
     if (currentPage === "Contact") {
       return <Contact />;
@@ -31,9 +38,8 @@ function App() {
 
   return (
     <div className="HomePage">
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      <App />
       <Footer />
 
     </div>
