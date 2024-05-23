@@ -1,0 +1,32 @@
+.footerEl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    width: 100%;
+    border-top: 1px solid #020202;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.list-inline-item {
+    padding: 0 10px;
+}
+
+.linkedin {
+    color: #f1f5f7;
+}
+
+.github {
+    color: #f1f5f7;
+}
+
+.create {
+    background-color: #f1f5f7;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
