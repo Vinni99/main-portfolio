@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/portfolio.css";
 import Button from 'react-bootstrap/Button';
@@ -19,13 +19,12 @@ function Portfolio() {
             </Row>
             <Row className="cardEl">
                 {data.portfolio.map((project, index) => (
-                    <Card className="card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card key={index} className="card" style={{ width: '20rem' }}>
+                        <Card.Img variant="top" src={project.src}  alt={project.title}/>
                         <Card.Body>
                             <Card.Title>{project.title}</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                {project.description}
                             </Card.Text>
                             <Button variant="primary">View in GitHub</Button>
                         </Card.Body>
