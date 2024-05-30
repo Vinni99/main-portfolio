@@ -1,4 +1,7 @@
- {
+import employee from '../img/employee-tracker.png';
+
+const data = {
+
   "portfolio": [
     {
       "id": 1,
@@ -49,11 +52,18 @@
       "id": 6,
       "title": "Employee Tracker",
       "description": "Employee Tracker is a command-line application designed to help business owners manage their company's departments, roles and employees efficiently.",
-      "src": "/img/employee-tracker.png",
+      "src": employee,
       "href": "https://github.com/Vinni99/employee-tracker",
       "live": "https://github.com/Vinni99/employee-tracker",
-      "tools": ["JavaScript", "Inquirer", "MySQL", "Node"],
+      "tools": [
+        "JavaScript",
+       "Inquirer",
+        "MySQL",
+         "Node"
+        ],
       "active": true
     }
   ]
 }
+
+export default data;

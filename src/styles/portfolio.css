@@ -13,6 +13,7 @@
 
 .cardEl {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
     margin: 10px;
     padding: 30px;
     border-radius: 10px;
@@ -30,4 +31,41 @@
     padding: 50px;
 }
 
+.image-card {
+    width: 100%;
+    border-radius: 10px;
+}
 
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #4b8bf983;
+    border-radius: 10px;
+}
+
+.tools {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4b8bf983;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4b8bf9;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

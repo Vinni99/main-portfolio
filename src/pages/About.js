@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import AboutMe from '../img/about-me.png';
+import AboutMe from '../img/about-me.png';
 import '../styles/about.css';
 
 function About({ handleButtonClick }) {
@@ -16,7 +16,7 @@ function About({ handleButtonClick }) {
             Mauris egestas lorem eu leo interdum, id sollicitudin lectus malesuada. Vivamus eleifend tortor turpis, eget commodo libero posuere at.</p>
         </Col>
         <Col className="image-class" md={6}>
-        <img src="/img/about-me.png" alt="about-me" className="img-fluid" />
+        <img src={AboutMe} alt="about-me" className="img-fluid" />
         </Col>
       </Row>
           <button className="button" onClick={handleButtonClick}>View my work</button>

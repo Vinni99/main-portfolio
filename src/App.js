@@ -6,6 +6,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Navigation from './components/Navigation';
+import data from "./data/index.js";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
   const renderPage = () => {
     if (currentPage === "Portfolio") {
-      return <Portfolio />;
+      return <Portfolio data={data} />;
     }
     if (currentPage === "About") {
       return <About handleButtonClick={() => handlePageChange('Portfolio')} />;

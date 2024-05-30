@@ -1,11 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "../styles/portfolio.css";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import data from '../data/index.json';
 
-function Portfolio() {
+
+function Portfolio({ data }) {
 
 
     return (
@@ -19,15 +17,18 @@ function Portfolio() {
             </Row>
             <Row className="cardEl">
                 {data.portfolio.map((project, index) => (
-                    <Card key={index} className="card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src={project.src}  alt={project.title}/>
+                    <Card key={index} className="card" style={{ width: '28rem' }}>
+                        <Card.Img className="image-card" variant="top" src={project.src} alt={project.title} />
                         <Card.Body>
-                            <Card.Title>{project.title}</Card.Title>
-                            <Card.Text>
+                            <Card.Title className="title">-{project.title}</Card.Title>
+                            <Card.Text className="description">
                                 {project.description}
                             </Card.Text>
-                            <Button variant="primary">View in GitHub</Button>
+                            <Card.Text className="tools">
+                                {project.tools ? project.tools.join(" | ") : ""}
+                            </Card.Text>
                         </Card.Body>
+                        <button className="btn">View in GitHub</button>
                     </Card>
                 ))}
             </Row>

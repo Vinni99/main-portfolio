@@ -23,7 +23,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-            <p className="create">© 2024 | Created by Vinni</p>
+                <p className="create">© 2024 | Created by Vinni</p>
             </div>
         </footer>
     );
