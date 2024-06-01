@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+// import { Container, Row, Col, Card } from "react-bootstrap";
 import "../styles/portfolio.css";
 
 
@@ -7,32 +7,28 @@ function Portfolio({ data }) {
 
 
     return (
-        <Container className="my-5">
-            <Row className="portfolio">
-                <Col md={12}>
-                    <h1 className="title-header">Welcome to my Portfolio</h1>
-                    <hr></hr>
-                    <p>Check out some of my projects!</p>
-                </Col>
-            </Row>
-            <Row className="cardEl">
+        <div className="portfolio-container">
+            <div className="title-header">Welcome to my Portfolio</div>
+            <hr />
+            <p>Check out some of my projects!</p>
+            <div className="card-container">
                 {data.portfolio.map((project, index) => (
-                    <Card key={index} className="card" style={{ width: '28rem' }}>
-                        <Card.Img className="image-card" variant="top" src={project.src} alt={project.title} />
-                        <Card.Body>
-                            <Card.Title className="title">-{project.title}</Card.Title>
-                            <Card.Text className="description">
-                                {project.description}
-                            </Card.Text>
-                            <Card.Text className="tools">
+                    <div key={index} className="card">
+                        <img className="image-card" src={project.src} alt={project.title} />
+                        <div className="card-body">
+                            <div className="title">- {project.title}</div>
+                            <div className="description">{project.description}</div>
+                            <div className="tools">
                                 {project.tools ? project.tools.join(" | ") : ""}
-                            </Card.Text>
-                        </Card.Body>
-                        <button className="btn">View in GitHub</button>
-                    </Card>
+                            </div>
+                            <button className="github-btn" type="button"
+                                onClick={() => window.open(project.href, "_blank", "noopener, noreferrer")}
+                            >View in GitHub</button>
+                        </div>
+                    </div>
                 ))}
-            </Row>
-        </Container>
+            </div>
+        </div>
     )
 }
 export default Portfolio;

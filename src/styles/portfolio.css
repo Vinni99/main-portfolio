@@ -1,71 +1,91 @@
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.title-header {
+.portfolio-container {
+    margin: 2rem;
+  }
+  
+  .title-header {
     font-size: 2rem;
     text-align: center;
-    margin-top: 20px;
-}
-
-.cardEl {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .card-container {
     display: flex;
-    margin: 10px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #ffffff;
-}
-
-.card {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 28rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-card {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tools {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #ff0000;
+    
+  }
+  
+  .github-btn {
+    background-color: #b048c5c2;
+    color: rgb(253, 253, 253);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 50px;
-    padding: 50px;
-}
-
-.image-card {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.description {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    padding: 20px;
-    background-color: #4b8bf983;
-    border-radius: 10px;
-}
-
-.tools {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #4b8bf983;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #4b8bf9;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
+    display: flex;
+  }
+  
+  .github-btn:hover {
+    background-color: #697d92;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 600px) {
+    .card {
+      width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .card {
+      width: calc(33.333% - 1rem);
+    }
+  }
+  
