@@ -14,7 +14,9 @@ function Portfolio({ data }) {
             <div className="card-container">
                 {data.portfolio.map((project, index) => (
                     <div key={index} className="card">
-                        <img className="image-card" src={project.src} alt={project.title} />
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                            <img className="image-card" src={project.src} alt={project.title} />
+                        </a>
                         <div className="card-body">
                             <div className="title">- {project.title}</div>
                             <div className="description">{project.description}</div>

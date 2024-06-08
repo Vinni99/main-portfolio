@@ -11,15 +11,18 @@ function About({ handleButtonClick }) {
         <Col md={6}>
           <h1>About Me</h1>
           <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis neque quis ipsum laoreet commodo.
-            Phasellus commodo, purus quis consectetur rhoncus, nibh nibh malesuada nibh, vel posuere odio nibh eu justo.
-            Mauris egestas lorem eu leo interdum, id sollicitudin lectus malesuada. Vivamus eleifend tortor turpis, eget commodo libero posuere at.</p>
+          <p>
+            Hey there, I'm Vinni. Enthusiastic Full Stack Developer ready to embark on my first professional adventure in the tech industry.
+            My journey so far has been filled with coding, learning, and building projects that I'm proud of.
+            Now, I'm looking for a chance to bring my skills to a forward-thinking, collaborate, grow and create innovative solutions.
+            Let's start something great!
+          </p>
         </Col>
         <Col className="image-class" md={6}>
-        <img src={AboutMe} alt="about-me" className="img-fluid" />
+          <img src={AboutMe} alt="about-me" className="img-fluid" />
         </Col>
       </Row>
-          <button className="button" onClick={handleButtonClick}>View my work</button>
+      <button className="button" onClick={handleButtonClick}>View my work</button>
     </Container>
   )
 }
