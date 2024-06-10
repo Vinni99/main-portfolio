@@ -1,6 +1,7 @@
 import employee from '../img/employee-tracker.png';
 import noSQL from '../img/noSQL.png';
 import textEditor from '../img/text-editor.png';
+import noteTaker from '../img/note-taker.png';
 
 const data = {
 
@@ -25,11 +26,18 @@ const data = {
     },
     {
       "id": 3,
-      "src": "",
-      "title": "",
-      "description": "",
-      "href": "",
-      "live": "",
+      "src": noteTaker,
+      "title": "Note Taker",
+      "description": "Note taker is designed to help users write, save and delete notes. Built with an Express.js backend, it stores and retrieves note data from a JSON file, providing a simple yet effective way to keep track of tasks and thoughts.",
+      "href": "https://github.com/Vinni99/note-taker",
+      "live": "https://note-list-taker99-16e59949d8d0.herokuapp.com/",
+      "tools": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "Express.js",
+        "Heroku"
+      ],
       "active": true
     },
     {
