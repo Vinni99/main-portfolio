@@ -2,6 +2,7 @@ import employee from '../img/employee-tracker.png';
 import noSQL from '../img/noSQL.png';
 import textEditor from '../img/text-editor.png';
 import noteTaker from '../img/note-taker.png';
+import pokedex from '../img/pokedex.png';
 
 const data = {
 
@@ -17,11 +18,16 @@ const data = {
     },
     {
       "id": 2,
-      "src": "",
-      "title": "This is a test",
-      "description": "",
-      "href": "",
-      "live": "",
+      "src": pokedex,
+      "title": "Pokedex | React",
+      "description": "Pokedex is a web application designed to improve and practice React skills by utilizing an API to fetch and display data about various Pokémon.",
+      "href": "https://github.com/Vinni99/pokedex/tree/main",
+      "live": "https://vinni99.github.io/pokedex/",
+      "tools": [
+        "JavaScript",
+        "React",
+        "CSS",
+      ],
       "active": true
     },
     {
