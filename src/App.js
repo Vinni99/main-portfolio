@@ -16,9 +16,14 @@ function App() {
   const handlePageChange = (page) => {
     setCurrentPage(page);
 
-    const section = document.getElementById(page.toLowerCase());
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (page === "Portfolio") {
+      // Scroll to the top of the page or another desired section
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.getElementById(page.toLowerCase());
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 

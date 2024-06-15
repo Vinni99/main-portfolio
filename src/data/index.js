@@ -3,17 +3,23 @@ import noSQL from '../img/noSQL.png';
 import textEditor from '../img/text-editor.png';
 import noteTaker from '../img/note-taker.png';
 import pokedex from '../img/pokedex.png';
+import layout from '../img/layout-frontend.png';
 
 const data = {
 
   "portfolio": [
     {
       "id": 1,
-      "src": "",
-      "title": "This is a test",
-      "description": "",
-      "href": "",
-      "live": "",
+      "src": layout,
+      "title": "Layout-1",
+      "description": "The Layout-1 project is a self-initiated exercise aimed at practicing and improving front-end development skills. It serves as a practical example of creating a multi-section, responsive webpage using core web technologies.",
+      "href": "https://github.com/Vinni99/layout-1",
+      "live": "https://vinni99.github.io/layout-1/",
+      "tools": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "active": true
     },
     {
