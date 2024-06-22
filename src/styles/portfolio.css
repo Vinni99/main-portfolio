@@ -1,5 +1,9 @@
 .portfolio-container {
     margin: 2rem;
+    padding: 1rem;
+    background-color: #cfcdcd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .title-header {
@@ -13,6 +17,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    align-items: flex-start;
+  
   }
   
   .card {
@@ -56,7 +62,6 @@
     font-size: 0.875rem;
     margin-bottom: 1rem;
     color: #ff0000;
-    
   }
   
   .github-btn {
@@ -80,6 +85,7 @@
   @media (min-width: 600px) {
     .card {
       width: calc(50% - 1rem);
+      margin: 1rem;
     }
   }
   

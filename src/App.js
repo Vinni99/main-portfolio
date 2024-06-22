@@ -1,16 +1,14 @@
-import './App.css';
-import React, { useState } from 'react';
-import Footer from './components/Footer';
-import Portfolio from './pages/Portfolio';
-import About from './pages/About';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
-import Navigation from './components/Navigation';
+import "./App.css";
+import React, { useState } from "react";
+import Footer from "./components/Footer";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Navigation from "./components/Navigation";
 import data from "./data/index.js";
 
-
 function App() {
-
   const [currentPage, setCurrentPage] = useState("About");
 
   const handlePageChange = (page) => {
@@ -32,7 +30,7 @@ function App() {
       return <Portfolio data={data} />;
     }
     if (currentPage === "About") {
-      return <About handleButtonClick={() => handlePageChange('Portfolio')} />;
+      return <About handleButtonClick={() => handlePageChange("Portfolio")} />;
     }
     if (currentPage === "Contact") {
       return <Contact />;
@@ -44,10 +42,12 @@ function App() {
 
   return (
     <div className="HomePage">
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+      <div className="main-content">{renderPage()}</div>
       <Footer />
-
     </div>
   );
 }

@@ -1,14 +1,10 @@
 .footerEl {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #0a0a0a;
     width: 100%;
     border-top: 1px solid #020202;
     color: #fff;
     font-size: 20px;
-    padding: 5px;
-    margin-top: 20px;
+    padding: 10px;
 }
 
 .list-inline-item {

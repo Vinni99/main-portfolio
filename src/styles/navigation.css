@@ -1,6 +1,6 @@
-#nav-link {
+#nav-link  {
   background-color: rgb(0, 0, 0);
-  padding: 25px;
+  padding: 30px;
   margin: 0;
   border-radius: 25px;
   display: flex;
@@ -8,25 +8,36 @@
   font-size: 23px;
   font-weight: lighter;
   justify-content: center;
-  /* position: fixed; //Just for testing
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; */
-  /* width: 100%; */
+}
+
+#nav-link .active {
+  background-color: white;
+  color: black;
 }
 
 .ninja-icon {
   font-size: 50px;
-  margin-right: 15px;
   color: rgb(249, 249, 249);
-  position: relative;
-  right: 30%;
-  bottom: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000; /*Ensures it stays above other elements*/
 }
+
+/* .ninja-icon {
+  font-size: 50px;
+  margin-right: 10px;
+  color: rgb(249, 249, 249);
+  position: relative;
+  right: 30%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 #nav-link a {
   color: beige;
@@ -37,39 +48,44 @@
   font-size: 20px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  /* position: relative;
   top: 5px;
-  right: 5px;
+  right: 5px; */
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
-  padding: 6px;
 }
 
 #nav-link a:hover {
   color: rgb(0, 0, 0);
   background-color: beige;
   border-radius: 10px;
-  padding: 5px;
-  margin: 0 10px;
+  padding: 10px;
+  margin: 0 30px;
 }
 
 @media (max-width: 430px) {
+  #nav-link {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   #nav-link a {
-    font-size: 15px;
-    padding: 10px;
-    margin: 10px 0;
+    font-size: 12px; /* Decrease font size for smaller screens */
+    margin: 5px 0; /* Adjust margin for spacing between links */
+    width: 100%; /* Full width for each link */
+    text-align: center; /* Center text */
   }
   .ninja-icon {
-    font-size: 30px;
-  }
-  #nav-link {
-    padding: 20px;
-    flex-direction: column;
+    font-size: 25px;
+    top: 10px;
+    left: 10px;
+    /* position: absolute;
+    z-index: 1000; */
   }
 }
