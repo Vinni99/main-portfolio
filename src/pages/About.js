@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import AboutMe from '../img/about-me.png';
+import AboutMe from '../img/profile.pic.png';
 import '../styles/about.css';
 
 function About({ handleButtonClick }) {
