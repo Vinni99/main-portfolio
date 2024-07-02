@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+  // https://Vinni99.github.io/main-portfolio
 .pnp.js
 
 # testing
