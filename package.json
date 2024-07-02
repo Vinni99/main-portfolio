@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.vinniportfolio.com/",
+  "homepage": "https://Vinni99.github.io/main-portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
