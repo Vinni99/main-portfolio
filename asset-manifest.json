@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/main-portfolio/static/css/main.fd79d236.css",
-    "main.js": "/main-portfolio/static/js/main.b734c660.js",
-    "static/js/453.1407b060.chunk.js": "/main-portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/profile.pic.png": "/main-portfolio/static/media/profile.pic.946258a0104d6670f34c.png",
-    "static/media/employee-tracker.png": "/main-portfolio/static/media/employee-tracker.af7790cf04fea21e43fb.png",
-    "static/media/noSQL.png": "/main-portfolio/static/media/noSQL.e11e503c5457be1c731d.png",
-    "static/media/layout-frontend.png": "/main-portfolio/static/media/layout-frontend.5053d2beb7abe1a67f00.png",
-    "static/media/pokedex.png": "/main-portfolio/static/media/pokedex.95d474c65212b7c69e7f.png",
-    "static/media/note-taker.png": "/main-portfolio/static/media/note-taker.d1f4035fedd90601ce45.png",
-    "static/media/text-editor.png": "/main-portfolio/static/media/text-editor.ed589bdec02ac6b6f8df.png",
-    "index.html": "/main-portfolio/index.html",
-    "main.fd79d236.css.map": "/main-portfolio/static/css/main.fd79d236.css.map",
-    "main.b734c660.js.map": "/main-portfolio/static/js/main.b734c660.js.map",
-    "453.1407b060.chunk.js.map": "/main-portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/static/css/main.fd79d236.css",
+    "main.js": "/static/js/main.59e47f78.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/profile.pic.png": "/static/media/profile.pic.946258a0104d6670f34c.png",
+    "static/media/employee-tracker.png": "/static/media/employee-tracker.af7790cf04fea21e43fb.png",
+    "static/media/noSQL.png": "/static/media/noSQL.e11e503c5457be1c731d.png",
+    "static/media/layout-frontend.png": "/static/media/layout-frontend.5053d2beb7abe1a67f00.png",
+    "static/media/pokedex.png": "/static/media/pokedex.95d474c65212b7c69e7f.png",
+    "static/media/note-taker.png": "/static/media/note-taker.d1f4035fedd90601ce45.png",
+    "static/media/text-editor.png": "/static/media/text-editor.ed589bdec02ac6b6f8df.png",
+    "index.html": "/index.html",
+    "main.fd79d236.css.map": "/static/css/main.fd79d236.css.map",
+    "main.59e47f78.js.map": "/static/js/main.59e47f78.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd79d236.css",
-    "static/js/main.b734c660.js"
+    "static/js/main.59e47f78.js"
   ]
 }
