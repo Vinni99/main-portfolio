@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 function Portfolio({ data }) {
   const [displayedText, setDisplayedText] = useState("");
-  const element = "< Welcome to my Portfolio✅/>";
+  const element = "< Welcome to my Portfolio/>";
   const typingSpeed = 100;
 
   useEffect(() => {
